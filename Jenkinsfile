@@ -2,8 +2,8 @@
 pipeline {
   agent any
   tools {
-    //gradle 'Default'
-    ant 'Default'   // this works fine but our jenkins should have an installation with name default.
+    gradle 'Default'
+    //ant 'Default'   // this works fine but our jenkins should have an installation with name default.
   }
   stages {
     stage("Build") {
