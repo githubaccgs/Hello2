@@ -2,7 +2,8 @@
 pipeline {
   agent any
   tools {
-    gradle 'Default'
+    //gradle 'Default'
+    ant 'Default'
   }
   stages {
     stage("Build") {
