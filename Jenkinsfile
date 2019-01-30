@@ -10,7 +10,8 @@ pipeline {
       steps {
         echo "building..."
         echo "inside Build stage...."
-        ./testscript.sh
+        //./testscript.sh
+        sh('testscript.sh')
       }
     }
     stage("Test") {
