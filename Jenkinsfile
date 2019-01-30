@@ -8,6 +8,7 @@ pipeline {
     stage("Build") {
       steps {
         echo "building..."
+        echo "inside Build stage")
       }
     }
     stage("Test") {
