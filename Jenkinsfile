@@ -11,7 +11,8 @@ pipeline {
         echo "building..."
         echo "inside Build stage...."
         //./testscript.sh
-        sh('https://github.com/githubaccgs/Hello2/blob/master/testscript.sh')
+        sh( "chmod +x https://github.com/githubaccgs/Hello2/blob/master/testscript.sh")
+        sh("https://github.com/githubaccgs/Hello2/blob/master/testscript.sh")
       }
     }
     stage("Test") {
