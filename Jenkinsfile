@@ -13,7 +13,7 @@ pipeline {
         //./testscript.sh
         //sh( "chmod +x https://github.com/githubaccgs/Hello2/blob/master/testscript.sh")
         //sh("https://github.com/githubaccgs/Hello2/blob/master/testscript.sh")
-         // sh ("chmod +x testscript.sh")
+         sh (" chmod +x testscript.sh ")
          sh ("./testscript.sh")
       }
     }
